@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ScreenBackground"
+    tools:context=".Lenovo">
+    <TextView
+        android:id="@+id/txT1"
+        android:layout_width="420dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="664dp"
+        android:background="@drawable/txt_bg"
+        android:text="       Coupons"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="410dp"
+        android:layout_height="577dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="279dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="478dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lenovo_logo" />
+
+    <TextView
+        android:id="@+id/txT2"
+        android:layout_width="168dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="428dp"
+        android:text="8% CASH BACK "
+        android:textColor="#008900"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txT3"
+        android:layout_width="72dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="303dp"
+        android:layout_marginEnd="301dp"
+        android:layout_marginBottom="403dp"
+        android:text="Lenovo"
+        android:textColor="#7BC063"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txT4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="310dp"
+        android:layout_marginBottom="381dp"
+        android:text="DETAILS"
+        android:textColor="#7BC063"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txT5"
+        android:layout_width="303dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="369dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="315dp"
+        android:text="Ends 11/24/2023 - Remember click go to donation when you check out. Online only."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txT6"
+        android:layout_width="270dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="442dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="255dp"
+        android:background="@drawable/txt_bg2"
+        android:text="  Donate  Minimum Php 1,000"
+        android:textAlignment="center"
+        android:textColor="#FCFBE7"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="271dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="167dp"
+        android:background="@drawable/btn"
+        android:text="GO TO DONATION"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="271dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="585dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="92dp"
+        android:background="@drawable/btn"
+        android:text="BACK"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

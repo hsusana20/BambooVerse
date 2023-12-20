@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BambooVerse" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+    <style name="ScreenBackground"><item name="android:background">@drawable/anotherdarkmodebg</item></style>
+    <style name="AnotherScreenBackground"><item name="android:background">@drawable/darkanobg</item></style>
+    <style name="ButtonColor1"><item name="android:background">@drawable/darkbuttoncolorano</item></style>
+    <style name="ButtonColor2"><item name="android:background">@drawable/darkbuttoncolor</item></style>
+    <style name="ButtonColor3"><item name="android:background">@drawable/darkanocolorbutton</item></style>
+    <style name="ImageColor1"><item name="android:background">@drawable/darkanocolorbutton</item></style>
+</resources>

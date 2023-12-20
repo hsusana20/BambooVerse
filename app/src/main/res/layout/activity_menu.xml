@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AnotherScreenBackground"
+    tools:context=".menu">
+
+    <android.widget.Button
+        android:id="@+id/button6"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/poppins"
+        android:text="Privacy Policy"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        style="@style/ButtonColor3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <android.widget.Button
+        android:id="@+id/button7"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/poppins"
+        android:text="Enable Dark Mode"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        style="@style/ButtonColor3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <android.widget.Button
+        android:id="@+id/button8"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/poppins"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        style="@style/ButtonColor3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.583" />
+
+    <android.widget.Button
+        android:id="@+id/button9"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:fontFamily="@font/poppins"
+        android:text="Back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        style="@style/ButtonColor1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.927" />
+
+    <android.widget.Button
+        android:id="@+id/button5"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/poppins"
+        android:text="External Links"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        style="@style/ButtonColor3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <android.widget.TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="MENU"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+</androidx.constraintlayout.widget.ConstraintLayout>

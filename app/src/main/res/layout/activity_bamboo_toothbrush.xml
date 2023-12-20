@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ScreenBackground"
+    tools:context=".BambooToothbrush">
+    <TextView
+        android:id="@+id/textBt"
+        android:layout_width="420dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="664dp"
+        android:background="@drawable/txt_bg"
+        android:text="       Coupons"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="410dp"
+        android:layout_height="577dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="229dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="107dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="421dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bamboo_toothbrush" />
+
+    <TextView
+        android:id="@+id/textBt2"
+        android:layout_width="99dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="310dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="388dp"
+        android:text="8% OFF "
+        android:textColor="#008900"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="229dp"
+        android:layout_marginBottom="349dp"
+        android:text="Bamboo Toothbrush"
+        android:textColor="#7BC063"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBt4"
+        android:layout_width="148dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="382dp"
+        android:layout_marginEnd="226dp"
+        android:layout_marginBottom="327dp"
+        android:text="DETAILS"
+        android:textColor="#7BC063"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBt5"
+        android:layout_width="303dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="264dp"
+        android:text="Ends 11/24/2023 - Remember click go to donation when you check out. Online only."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textBt6"
+        android:layout_width="270dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="217dp"
+        android:background="@drawable/txt_bg2"
+        android:text="  Donate  Minimum Php 1,000"
+        android:textAlignment="center"
+        android:textColor="#FCFBE7"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnG1"
+        android:layout_width="271dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="525dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/btn"
+        android:text="GO TO DONATION"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnB1"
+        android:layout_width="271dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="599dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/btn"
+        android:text="BACK"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BambooVerse"
+        tools:targetApi="31">
+        <activity
+            android:name=".Adidas"
+            android:exported="false" />
+        <activity
+            android:name=".PrepBoard"
+            android:exported="false" />
+        <activity
+            android:name=".BambooToothbrush"
+            android:exported="false" />
+        <activity
+            android:name=".BambooCups"
+            android:exported="false" />
+        <activity
+            android:name=".Lenovo"
+            android:exported="false" />
+        <activity
+            android:name=".Dell"
+            android:exported="false" />
+        <activity
+            android:name=".PapaJohns"
+            android:exported="false" />
+        <activity
+            android:name=".Nike"
+            android:exported="false" />
+        <activity
+            android:name=".Voucher"
+            android:exported="false" />
+        <activity
+            android:name=".DonationSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentMethod"
+            android:exported="false" />
+        <activity
+            android:name=".Recurring"
+            android:exported="false" />
+        <activity
+            android:name=".OneTime"
+            android:exported="false" />
+        <activity
+            android:name=".OTorRC"
+            android:exported="false" />
+        <activity
+            android:name=".ExternalLinks"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPageFixed"
+            android:exported="false" />
+        <activity
+            android:name=".SOLActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomePage"
+            android:exported="false" />
+        <activity
+            android:name=".UpdatedLandingPage"
+            android:exported="false" />
+        <activity
+            android:name=".BambooProducts"
+            android:exported="false" />
+        <activity
+            android:name=".BambooTypes"
+            android:exported="false" />
+        <activity
+            android:name=".Biodiversity"
+            android:exported="false" />
+        <activity
+            android:name=".WaterConserv"
+            android:exported="false" />
+        <activity
+            android:name=".RenewableResource"
+            android:exported="false" />
+        <activity
+            android:name=".RapidGrowth"
+            android:exported="false" />
+        <activity
+            android:name=".BambooBenefits"
+            android:exported="false" />
+        <activity
+            android:name=".menu"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
