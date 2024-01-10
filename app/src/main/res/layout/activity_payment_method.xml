@@ -65,15 +65,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnE"
-        android:layout_width="252dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="283dp"
+        android:id="@+id/btnG"
+        android:layout_width="180dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="369dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="396dp"
+        android:layout_marginBottom="295dp"
         android:background="@drawable/payment_btn"
-        android:text="E-WALLET"
+        android:text="GCash"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,63 +81,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnCd"
-        android:layout_width="252dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="352dp"
+        android:id="@+id/btnBP"
+        android:layout_width="177dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="451dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="327dp"
+        android:layout_marginBottom="219dp"
         android:background="@drawable/payment_btn"
-        android:text="CREDIT/DEBIT CARD"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnP"
-        android:layout_width="252dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="422dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="257dp"
-        android:background="@drawable/payment_btn"
-        android:text="PAY VIA BANK TRANSFER"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnO"
-        android:layout_width="252dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="490dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="189dp"
-        android:background="@drawable/payment_btn"
-        android:text="Over-the-counter"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnChoose"
-        android:layout_width="254dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="574dp"
-        android:layout_marginEnd="78dp"
-        android:layout_marginBottom="106dp"
-        android:background="@drawable/rectangle_btn2"
-        android:text="CHOOSE"
+        android:text="BPI"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -161,6 +113,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textViewNote"
+        android:layout_width="217dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="418dp"
+        android:text="Note: After payment, send the receipt to our messenger"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

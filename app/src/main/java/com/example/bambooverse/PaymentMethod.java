@@ -2,6 +2,7 @@ package com.example.bambooverse;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,67 +12,37 @@ import android.widget.Toast;
 
 public class PaymentMethod extends AppCompatActivity {
     TextView textView;
-    Button btnE, btnCd, btnP, btnO, btnChoose, button3;
+    Button btnG, btnBP,  button3;
     String selectedPaymentMethod;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment_method);
         textView = findViewById(R.id.textView);
-        btnE = findViewById(R.id.btnE);
-        btnCd = findViewById(R.id.btnCd);
-        btnP = findViewById(R.id.btnP);
-        btnO = findViewById(R.id.btnO);
-        btnChoose = findViewById(R.id.btnChoose);
+        btnG = findViewById(R.id.btnG);
+        btnBP = findViewById(R.id.btnBP);
         button3 = findViewById(R.id.button3);
 
 
 
-        btnE.setOnClickListener(new View.OnClickListener() {
+        btnG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                selectedPaymentMethod = "E-WALLET";
-                btnChoose.setText(" " + selectedPaymentMethod);
-            }
-        });
-
-        btnCd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                selectedPaymentMethod = "CREDIT/DEBIT CARD";
-                btnChoose.setText(" " + selectedPaymentMethod);
+                openGCashApp();
 
             }
         });
 
-        btnP.setOnClickListener(new View.OnClickListener() {
+        btnBP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                selectedPaymentMethod = "PAY VIA BANK TRANSFER";
-                btnChoose.setText(" " + selectedPaymentMethod);
+                openBPIApp();
+
 
             }
         });
 
-        btnO.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                selectedPaymentMethod = "Over the counter";
-                btnChoose.setText(" " + selectedPaymentMethod);
-
-            }
-        });
-
-        btnChoose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (selectedPaymentMethod != null) {
-                    Toast.makeText(PaymentMethod.this, "Your choice is successful. Chosen payment method: " + selectedPaymentMethod, Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(PaymentMethod.this, "Please choose a payment method", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
 
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,5 +51,28 @@ public class PaymentMethod extends AppCompatActivity {
 
             }
         });
+    }
+
+    private void openGCashApp() {
+        openApp("com.globe.gcash.android");
+    }
+
+    private void openBPIApp() {
+        openApp("com.bpi.mobile.banking");
+    }
+
+    private void openApp(String packageName) {
+        try {
+            Intent intent = getPackageManager().getLaunchIntentForPackage(packageName);
+            if (intent != null) {
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            } else {
+                Toast.makeText(this, "App not installed", Toast.LENGTH_SHORT).show();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            Toast.makeText(this, "Error opening app", Toast.LENGTH_SHORT).show();
+        }
     }
 }
