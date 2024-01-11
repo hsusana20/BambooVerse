@@ -122,6 +122,7 @@ public class SOLFragment extends Fragment {
 
         public void openUpdatedLandingPage () {
             Intent intent = new Intent(requireContext(), UpdatedLandingPage.class);
+            startActivity(intent);
         }
 }
 
