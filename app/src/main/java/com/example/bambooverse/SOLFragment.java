@@ -23,16 +23,16 @@ public class SOLFragment extends Fragment {
 
         Button signUp = view.findViewById(R.id.button);
         Button login = view.findViewById(R.id.button23);
+        Button guest = view.findViewById(R.id.buttonGue);
         scaleUp = AnimationUtils.loadAnimation(requireContext(), R.anim.scale_up);
         scaleDown = AnimationUtils.loadAnimation(requireContext(), R.anim.scale_down);
         signUp.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
 
-                if (motionEvent.getAction()==MotionEvent.ACTION_DOWN) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
                     signUp.startAnimation(scaleUp);
-                }
-                else if(motionEvent.getAction()==MotionEvent.ACTION_UP){
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
                     signUp.startAnimation(scaleDown);
                 }
                 scaleDown.setAnimationListener(new Animation.AnimationListener() {
@@ -56,10 +56,9 @@ public class SOLFragment extends Fragment {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
 
-                if (motionEvent.getAction()==MotionEvent.ACTION_DOWN) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
                     login.startAnimation(scaleUp);
-                }
-                else if(motionEvent.getAction()==MotionEvent.ACTION_UP){
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
                     login.startAnimation(scaleDown);
                 }
                 scaleDown.setAnimationListener(new Animation.AnimationListener() {
@@ -79,16 +78,50 @@ public class SOLFragment extends Fragment {
                 return true;
             }
         });
+        guest.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    guest.startAnimation(scaleUp);
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    guest.startAnimation(scaleDown);
+                }
+
+                scaleDown.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        openUpdatedLandingPage();
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                    }
+                });
+
+                return true;
+            }
+        });
+
         return view;
     }
 
-    public void openSOLActivity() {
-        Intent intent = new Intent(requireContext(), SOLActivity.class);
-        startActivity(intent);
-    }
+        public void openSOLActivity () {
+            Intent intent = new Intent(requireContext(), SOLActivity.class);
+            startActivity(intent);
+        }
 
-    public void openNewLoginPage() {
-        Intent intent = new Intent(requireContext(), LoginPageFixed.class);
-        startActivity(intent);
-    }
+        public void openNewLoginPage () {
+            Intent intent = new Intent(requireContext(), LoginPageFixed.class);
+            startActivity(intent);
+        }
+
+        public void openUpdatedLandingPage () {
+            Intent intent = new Intent(requireContext(), UpdatedLandingPage.class);
+        }
 }
+
