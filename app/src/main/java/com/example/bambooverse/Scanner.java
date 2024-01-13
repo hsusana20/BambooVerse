@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.Manifest;
 import android.net.Uri;
@@ -42,6 +43,8 @@ public class Scanner extends AppCompatActivity {
     Button btnCamera, btnGallery, btnScan;
     ImageView imageIV;
     TextView resultTv;
+
+    ScrollView scrollView;
 
     private static final int CAMERA_REQUEST_CODE = 100;
     private static final int STORAGE_REQUEST_CODE = 101;
@@ -174,6 +177,12 @@ public class Scanner extends AppCompatActivity {
                     Log.d(TAG, "extractBarCodeQRCodeInfo: encryptionType: "+ encryptionType);
 
                     resultTv.setText("TYPE: TYPE_WIFI \nssid: "+ ssid +"\npassword: "+ password +"\nencryptionType"+encryptionType +"\nraw value: "+rawValue);
+                    scrollView.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            scrollView.fullScroll(View.FOCUS_DOWN);
+                        }
+                    });
 
                 }
                 break;
