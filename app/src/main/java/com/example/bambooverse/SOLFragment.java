@@ -1,5 +1,6 @@
 package com.example.bambooverse;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -24,6 +25,7 @@ public class SOLFragment extends Fragment {
         Button signUp = view.findViewById(R.id.button);
         Button login = view.findViewById(R.id.button23);
         Button guest = view.findViewById(R.id.buttonGue);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button scanner = view.findViewById(R.id.buttonSc);
         scaleUp = AnimationUtils.loadAnimation(requireContext(), R.anim.scale_up);
         scaleDown = AnimationUtils.loadAnimation(requireContext(), R.anim.scale_down);
         signUp.setOnTouchListener(new View.OnTouchListener() {
@@ -107,6 +109,35 @@ public class SOLFragment extends Fragment {
             }
         });
 
+        scanner.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    scanner.startAnimation(scaleUp);
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    scanner.startAnimation(scaleDown);
+                }
+
+                scaleDown.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        openScanner();
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                    }
+                });
+
+                return true;
+            }
+        });
+
         return view;
     }
 
@@ -123,6 +154,12 @@ public class SOLFragment extends Fragment {
         public void openUpdatedLandingPage () {
             Intent intent = new Intent(requireContext(), UpdatedLandingPage.class);
             startActivity(intent);
+        }
+
+        public void openScanner () {
+            Intent intent = new Intent(requireContext(), Scanner.class);
+            startActivity(intent);
+
         }
 }
 
