@@ -4,17 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Scanner"
-    android:background="@drawable/appbg">
+    android:background="@drawable/appbg"
+    tools:context=".Scanner">
 
     <ImageView
         android:id="@+id/imageBg"
         android:layout_width="339dp"
         android:layout_height="656dp"
-        app:srcCompat="@drawable/bg2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="37dp" />
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
 
     <TextView
         android:id="@+id/textViewScan"
@@ -94,6 +99,7 @@
 
     <TextView
         android:id="@+id/textViewResult"
+        style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"
@@ -101,7 +107,6 @@
         android:layout_marginEnd="321dp"
         android:layout_marginBottom="218dp"
         android:text="Result"
-        style="@style/TextAppearance.MaterialComponents.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
