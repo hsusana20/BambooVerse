@@ -164,25 +164,20 @@ public class Scanner extends AppCompatActivity {
             int valueType = barcode.getValueType();
 
             switch (valueType){
-                case Barcode.TYPE_WIFI:{
+                case Barcode.TYPE_WIFI: {
                     Barcode.WiFi typeWifi = barcode.getWifi();
 
-                    String ssid = ""+ typeWifi.getSsid();
-                    String password = ""+ typeWifi.getPassword();
-                    String encryptionType = ""+ typeWifi.getEncryptionType();
+                    String ssid = "" + typeWifi.getSsid();
+                    String password = "" + typeWifi.getPassword();
+                    String encryptionType = "" + typeWifi.getEncryptionType();
 
                     Log.d(TAG, "extractBarCodeQRCodeInfo: TYPE_WIFI: ");
-                    Log.d(TAG, "extractBarCodeQRCodeInfo: ssid: "+ ssid);
-                    Log.d(TAG, "extractBarCodeQRCodeInfo: password: "+ password);
-                    Log.d(TAG, "extractBarCodeQRCodeInfo: encryptionType: "+ encryptionType);
+                    Log.d(TAG, "extractBarCodeQRCodeInfo: ssid: " + ssid);
+                    Log.d(TAG, "extractBarCodeQRCodeInfo: password: " + password);
+                    Log.d(TAG, "extractBarCodeQRCodeInfo: encryptionType: " + encryptionType);
 
-                    resultTv.setText("TYPE: TYPE_WIFI \nssid: "+ ssid +"\npassword: "+ password +"\nencryptionType"+encryptionType +"\nraw value: "+rawValue);
-                    scrollView.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            scrollView.fullScroll(View.FOCUS_DOWN);
-                        }
-                    });
+                    resultTv.setText("TYPE: TYPE_WIFI \nssid: " + ssid + "\npassword: " + password + "\nencryptionType" + encryptionType + "\nraw value: " + rawValue);
+
 
                 }
                 break;
