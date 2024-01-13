@@ -135,7 +135,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <android.widget.Button
-            android:id="@+id/buttonSc"
+            android:id="@+id/buttonS"
             style="@style/ButtonColor1"
             android:layout_width="138dp"
             android:layout_height="57dp"

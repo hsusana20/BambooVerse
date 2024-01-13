@@ -25,7 +25,7 @@ public class SOLFragment extends Fragment {
         Button signUp = view.findViewById(R.id.button);
         Button login = view.findViewById(R.id.button23);
         Button guest = view.findViewById(R.id.buttonGue);
-        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button scanner = view.findViewById(R.id.buttonSc);
+        Button scanner = view.findViewById(R.id.buttonS);
         scaleUp = AnimationUtils.loadAnimation(requireContext(), R.anim.scale_up);
         scaleDown = AnimationUtils.loadAnimation(requireContext(), R.anim.scale_down);
         signUp.setOnTouchListener(new View.OnTouchListener() {
