@@ -82,7 +82,7 @@
             <Button
                 android:id="@+id/btnGoogle"
                 style="@style/ButtonColor1"
-                android:="10dp"
+                android:padding="10dp"
                 android:layout_width="302dp"
                 android:layout_height="60dp"
                 android:text="Sign in with Google"
