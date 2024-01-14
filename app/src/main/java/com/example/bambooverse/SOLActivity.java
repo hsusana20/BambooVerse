@@ -35,7 +35,7 @@ public class SOLActivity extends AppCompatActivity {
 
     EditText signupUsername, signupEmail, signupPassword;
     TextView loginRedirectText;
-    Button signupButton, googleSignIn;
+    Button signupButton, btnGoogle;
     FirebaseDatabase database;
     DatabaseReference reference;
     private GoogleSignInClient mGoogleSignInClient;
@@ -54,7 +54,7 @@ public class SOLActivity extends AppCompatActivity {
         signupPassword = findViewById(R.id.signup_password);
         loginRedirectText = findViewById(R.id.loginRedirectText);
         signupButton = findViewById(R.id.signup_button);
-        googleSignIn = findViewById(R.id.googleSignIn);
+        btnGoogle = findViewById(R.id.btnGoogle);
         mAuth = FirebaseAuth.getInstance();
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -89,7 +89,7 @@ public class SOLActivity extends AppCompatActivity {
             }
         });
 
-        googleSignIn.setOnClickListener(new View.OnClickListener() {
+        btnGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 signInWithGoogle();
@@ -129,6 +129,9 @@ public class SOLActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            Log.d(TAG, "signInWithCredential:success");
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            updateUI(user);
 
 
                         } else {
@@ -139,6 +142,22 @@ public class SOLActivity extends AppCompatActivity {
                         }
                     }
                 });
+    }
+    private void updateUI(FirebaseUser user) {
+        if (user != null) {
+            // User is signed in
+            String displayName = user.getDisplayName();
+            String email = user.getEmail();
+            String uid = user.getUid();
+
+            // Perform actions based on the signed-in user information
+            // ...
+
+            // For demonstration, let's display a welcome message
+            Toast.makeText(SOLActivity.this, "Welcome, " + displayName, Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(SOLActivity.this, "Signed out", Toast.LENGTH_SHORT).show();
+        }
     }
 }
 
