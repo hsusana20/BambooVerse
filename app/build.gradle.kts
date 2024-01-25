@@ -47,7 +47,6 @@ dependencies {
 
 
     implementation("com.google.mlkit:barcode-scanning:17.0.2")
-    implementation("com.google.firebase:firebase-auth:22.3.0")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
