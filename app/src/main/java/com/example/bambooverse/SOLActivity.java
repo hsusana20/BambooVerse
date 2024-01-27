@@ -91,11 +91,14 @@ public class SOLActivity extends AppCompatActivity {
                 signInWithGoogle();
             }
         });
+
     }
 
     private void signInWithGoogle() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
+        Intent intent = new Intent(SOLActivity.this, UpdatedLandingPage.class);
+        startActivity(intent);
     }
 
     @Override
@@ -126,6 +129,8 @@ public class SOLActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Log.d(TAG, "signInWithCredential:success");
+                            Intent intent = new Intent(SOLActivity.this, UpdatedLandingPage.class);
+                            startActivity(intent);
 
                         } else {
                             Log.w(TAG, "signInWithCredential:failure", task.getException());
