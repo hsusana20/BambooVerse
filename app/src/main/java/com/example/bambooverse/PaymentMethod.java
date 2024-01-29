@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,8 +13,9 @@ import android.widget.Toast;
 
 public class PaymentMethod extends AppCompatActivity {
     TextView textView;
-    Button btnG, btnBP,  button3;
+    Button btnG, btnBP, button3;
     String selectedPaymentMethod;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,11 +27,10 @@ public class PaymentMethod extends AppCompatActivity {
         button3 = findViewById(R.id.button3);
 
 
-
         btnG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openGCashApp();
+                openGCashLink();
 
             }
         });
@@ -37,7 +38,7 @@ public class PaymentMethod extends AppCompatActivity {
         btnBP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openBPIApp();
+                openBPILink();
 
 
             }
@@ -53,26 +54,19 @@ public class PaymentMethod extends AppCompatActivity {
         });
     }
 
-    private void openGCashApp() {
-        openApp("com.globe.gcash.android");
+    private void openGCashLink() {
+        String gCashUrl = "https://www.gcash.com/";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(gCashUrl));
+        startActivity(intent);
     }
 
-    private void openBPIApp() {
-        openApp("com.bpi.mobile.banking");
-    }
-
-    private void openApp(String packageName) {
-        try {
-            Intent intent = getPackageManager().getLaunchIntentForPackage(packageName);
-            if (intent != null) {
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(intent);
-            } else {
-                Toast.makeText(this, "App not installed", Toast.LENGTH_SHORT).show();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            Toast.makeText(this, "Error opening app", Toast.LENGTH_SHORT).show();
+    private void openBPILink () {
+        String bpiUrl = "https://online.bpi.com.ph/login";
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(bpiUrl));
+        startActivity(intent);
         }
-    }
 }
+
+
+
+
