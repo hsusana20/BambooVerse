@@ -35,7 +35,7 @@ public class Dell extends AppCompatActivity {
         btnGtd1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openMainActivity();
+                openOneTime();
             }
         });
 
@@ -52,8 +52,8 @@ public class Dell extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openMainActivity() {
-        Intent intent = new Intent(this, OTorRC.class);
+    public void openOneTime() {
+        Intent intent = new Intent(this, OneTime.class);
         startActivity(intent);
     }
 }
