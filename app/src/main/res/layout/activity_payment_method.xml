@@ -4,36 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/green_bg"
+    android:background="@drawable/appbg"
     tools:context=".PaymentMethod">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="93dp"
-        android:layout_height="97dp"
-        android:layout_marginStart="162dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="606dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_circle_24" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="82dp"
-        android:layout_height="75dp"
-        android:layout_marginStart="167dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="618dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_person_24" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -59,6 +31,7 @@
         android:layout_marginBottom="470dp"
         android:text="PAYMENT METHOD"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,12 +39,12 @@
 
     <Button
         android:id="@+id/btnG"
-        android:layout_width="180dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="151dp"
-        android:layout_marginTop="369dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="295dp"
+        android:layout_width="190dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="363dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="294dp"
         android:background="@drawable/payment_btn"
         android:text="GCash"
         android:textSize="20sp"
@@ -82,12 +55,12 @@
 
     <Button
         android:id="@+id/btnBP"
-        android:layout_width="177dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="154dp"
-        android:layout_marginTop="451dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="219dp"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="462dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="199dp"
         android:background="@drawable/payment_btn"
         android:text="BPI"
         android:textSize="20sp"
@@ -126,6 +99,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="252dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="556dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="111dp"
+        android:background="@drawable/rectangle_btn3"
+        android:text="SEND RECEIPT"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="278dp"
+        android:layout_height="217dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="514dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bambooverse_logo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

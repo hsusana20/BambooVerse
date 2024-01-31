@@ -67,16 +67,18 @@
             android:id="@+id/textViewResult"
             style="@style/TextAppearance.MaterialComponents.Body1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="59dp"
             android:text="Result"
-            android:textStyle="normal|bold"/>
+            android:textStyle="normal|bold" />
 
         <TextView
             android:id="@+id/resultTv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="137dp"
             android:text=""
-            android:textStyle="normal|bold"/>
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
 
 
     </LinearLayout>

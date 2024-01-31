@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class PaymentMethod extends AppCompatActivity {
     TextView textView;
-    Button btnG, btnBP, button3;
+    Button btnG, btnBP, button3, button4;
     String selectedPaymentMethod;
 
     @SuppressLint("MissingInflatedId")
@@ -25,6 +25,7 @@ public class PaymentMethod extends AppCompatActivity {
         btnG = findViewById(R.id.btnG);
         btnBP = findViewById(R.id.btnBP);
         button3 = findViewById(R.id.button3);
+        button4 = findViewById(R.id.button4);
 
 
         btnG.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +53,15 @@ public class PaymentMethod extends AppCompatActivity {
 
             }
         });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openUpdatedLandingPage();
+            }
+        });
     }
+
 
     private void openGCashLink() {
         String gCashUrl = "https://www.gcash.com/";
@@ -64,7 +73,13 @@ public class PaymentMethod extends AppCompatActivity {
         String bpiUrl = "https://online.bpi.com.ph/login";
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(bpiUrl));
         startActivity(intent);
-        }
+
+    }
+
+    private void openUpdatedLandingPage () {
+        Intent intent = new Intent(PaymentMethod.this, UpdatedLandingPage.class);
+        startActivity(intent);
+    }
 }
 
 
