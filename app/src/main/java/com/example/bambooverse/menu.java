@@ -26,6 +26,7 @@ public class menu extends AppCompatActivity {
         Button logout = findViewById(R.id.button8);
         Button externalLinks = findViewById(R.id.button5);
         Button back = findViewById(R.id.button9);
+        Button dashboard = findViewById(R.id.button10);
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up);
         scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down);
         back.setOnTouchListener(new View.OnTouchListener() {
@@ -188,6 +189,35 @@ public class menu extends AppCompatActivity {
                 });
                 return true;
             }
+        });
+
+        dashboard.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    dashboard.startAnimation(scaleUp);
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    dashboard.startAnimation(scaleDown);
+                }
+                scaleDown.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        Intent intent = new Intent(menu.this, Dashboard.class);
+                        startActivity(intent);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                    }
+                });
+                return true;
+            }
+
         });
     }
 }

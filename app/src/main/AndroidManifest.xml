@@ -49,7 +49,7 @@
             android:name=".Nike"
             android:exported="false" />
         <activity
-            android:name=".Voucher"
+            android:name=".Dashboard"
             android:exported="false" />
         <activity
             android:name=".DonationSuccess"
