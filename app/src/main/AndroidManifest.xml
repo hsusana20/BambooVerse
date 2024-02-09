@@ -52,13 +52,13 @@
             android:name=".Dashboard"
             android:exported="false" />
         <activity
-            android:name=".DonationSuccess"
+            android:name=".Coupons"
             android:exported="false" />
         <activity
             android:name=".PaymentMethod"
             android:exported="false" />
         <activity
-            android:name=".Recurring"
+            android:name=".EditProfile"
             android:exported="false" />
         <activity
             android:name=".OneTime"

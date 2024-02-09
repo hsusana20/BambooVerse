@@ -1,7 +1,6 @@
 package com.example.bambooverse;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -17,7 +16,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 
-public class CouponsFragment extends Fragment {
+public class Coupons extends Fragment {
     Animation scaleUp, scaleDown;
     CardView nike, pj, adidas, dell, lenovo, bc, bt, pb;
 

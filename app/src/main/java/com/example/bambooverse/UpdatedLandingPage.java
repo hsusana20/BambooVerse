@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
+
 import com.example.bambooverse.databinding.ActivityUpdatedLandingPageBinding;
 
 public class UpdatedLandingPage extends AppCompatActivity {
@@ -22,7 +23,7 @@ public class UpdatedLandingPage extends AppCompatActivity {
             if (itemId == R.id.home) {
                 replaceFragment(new HomeFragment());
             } else if (itemId == R.id.coupons) {
-                replaceFragment(new CouponsFragment());
+                replaceFragment(new Coupons());
             }
             return true;
         });

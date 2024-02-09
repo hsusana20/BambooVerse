@@ -45,7 +45,7 @@ public class OneTime extends AppCompatActivity {
 
 
     public void openCouponFragments() {
-        Intent intent = new Intent(this, CouponsFragment.class);
+        Intent intent = new Intent(this, Coupons.class);
         startActivity(intent);
     }
 }

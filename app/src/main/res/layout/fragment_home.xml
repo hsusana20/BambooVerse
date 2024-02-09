@@ -108,51 +108,67 @@
 
         <android.widget.Button
             android:id="@+id/button4"
+            style="@style/ButtonColor2"
             android:layout_width="300dp"
             android:layout_height="58dp"
             android:fontFamily="@font/poppins"
             android:text="BWP Profile"
             android:textColor="#8DAC91"
             android:textSize="20sp"
-            style="@style/ButtonColor2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.788" />
+            app:layout_constraintVertical_bias="0.854" />
 
         <android.widget.Button
             android:id="@+id/button3"
+            style="@style/ButtonColor2"
             android:layout_width="300dp"
             android:layout_height="58dp"
             android:fontFamily="@font/poppins"
             android:text="BWP Virtual Office"
             android:textColor="#8DAC91"
             android:textSize="20sp"
-            style="@style/ButtonColor2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.929" />
+            app:layout_constraintVertical_bias="0.973" />
 
         <android.widget.Button
             android:id="@+id/button2"
+            style="@style/ButtonColor2"
             android:layout_width="300dp"
             android:layout_height="58dp"
             android:fontFamily="@font/poppins"
             android:text="About Us"
             android:textColor="#8DAC91"
             android:textSize="20sp"
-            style="@style/ButtonColor2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.653" />
+            app:layout_constraintVertical_bias="0.731" />
+
+        <android.widget.Button
+            android:id="@+id/buttonBL"
+            style="@style/ButtonColor2"
+            android:layout_width="300dp"
+            android:layout_height="58dp"
+            android:fontFamily="@font/poppins"
+            android:text="Bamboo Library"
+            android:textColor="#8DAC91"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.614" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

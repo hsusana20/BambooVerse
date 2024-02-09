@@ -51,7 +51,7 @@ public class Dashboard extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(Dashboard.this, CouponsFragment.class);
+                        Intent intent = new Intent(Dashboard.this, Nike.class);
                         startActivity(intent);
                     }
 
@@ -163,7 +163,7 @@ public class Dashboard extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://bamboowarriors.ph/virtualoffice/"));
+                        Intent intent = new Intent(Dashboard.this, EditProfile.class);
                         startActivity(intent);
                     }
 
@@ -217,16 +217,9 @@ public class Dashboard extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(Dashboard.this, SOLFragment.class);
+                        Toast.makeText(Dashboard.this, "Remove account successfully", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(Dashboard.this, SOLActivity.class);
                         startActivity(intent);
-                        boolean accountRemoved = removeAccount();
-
-                        if (accountRemoved) {
-                            Toast.makeText(Dashboard.this, "Account removed successfully", Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(Dashboard.this, "Failed to remove account", Toast.LENGTH_SHORT).show();
-
-                        }
                     }
 
                     @Override
@@ -242,13 +235,6 @@ public class Dashboard extends AppCompatActivity {
     private void openMapofSellers() {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/search/bamboo+dealers/@14.5609545,121.0048418,9.63z?entry=ttu"));
         startActivity(intent);
-    }
-
-    private boolean removeAccount() {
-        // Your code to remove the account goes here
-        // Return true if account is successfully removed, false otherwise
-        // Placeholder, replace with actual implementation
-            return true;
     }
 
     private String getUserDisplayName() {
