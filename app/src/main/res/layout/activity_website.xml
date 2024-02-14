@@ -255,4 +255,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/website"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/website"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="570dp" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/website"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="570dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
