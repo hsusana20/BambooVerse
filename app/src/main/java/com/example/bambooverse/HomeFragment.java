@@ -34,8 +34,38 @@ public class HomeFragment extends Fragment {
         Button BWPProfile = view.findViewById(R.id.button4);
         Button AboutUs = view.findViewById(R.id.button2);
         Button BWPVirtualOffice = view.findViewById(R.id.button3);
+        Button BambooLibrary = view.findViewById(R.id.buttonBL);
         scaleUp = AnimationUtils.loadAnimation(requireContext(), R.anim.scale_up);
         scaleDown = AnimationUtils.loadAnimation(requireContext(), R.anim.scale_down);
+
+            BambooLibrary.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+
+                if (motionEvent.getAction()==MotionEvent.ACTION_DOWN) {
+                    BambooLibrary.startAnimation(scaleUp);
+                }
+                else if(motionEvent.getAction()==MotionEvent.ACTION_UP){
+                    BambooLibrary.startAnimation(scaleDown);
+                }
+                scaleDown.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        openBambooLibrary();
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                    }
+                });
+                return true;
+            }
+        });
+
 
         BWPVirtualOffice.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -275,6 +305,12 @@ public class HomeFragment extends Fragment {
         Intent intent = new Intent(requireContext(), BambooBenefits.class);
         startActivity(intent);
     }
+
+    public void openBambooLibrary() {
+        Intent intent = new Intent(requireContext(), BambooLibrary.class);
+        startActivity(intent);
+    }
+
     public void openAboutUs() {
         Intent intent = new Intent(requireContext(), AboutUs.class);
         startActivity(intent);

@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:queryHint="Type Here to Search"
-        app:textColor="@color/black" />
+        android:textColor="@color/black" />
 
     <ImageView
         android:id="@+id/imageView29"
