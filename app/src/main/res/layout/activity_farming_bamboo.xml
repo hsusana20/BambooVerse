@@ -5,15 +5,23 @@
     style="@style/ScreenBackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FarmingBamboo">
+    tools:context=".FarmingBamboo"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="2dp">
 
     <ImageView
         android:id="@+id/imageView49"
-        android:layout_width="318dp"
-        android:layout_height="560dp"
-        app:srcCompat="@drawable/bg2"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="96dp" />
+        android:layout_width="315dp"
+        android:layout_height="524dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="111dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
 
     <TextView
         android:id="@+id/textViewB"
@@ -39,15 +47,90 @@
         android:id="@+id/imageView50"
         android:layout_width="170dp"
         android:layout_height="208dp"
-        app:srcCompat="@drawable/b4"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="114dp" />
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="409dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/b4" />
 
     <TextView
         android:id="@+id/textView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="337dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="375dp"
         android:text="Farming Bamboo"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="335dp" />
+        android:textColor="#4CAF50"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="284dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="340dp"
+        android:text="Daphne Lewis, Carol Miles, Angela Hooper, Adam Turtle, Jean Akers, Megan Ernst"
+        android:textColor="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="391dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="321dp"
+        android:text="October 31, 2007"
+        android:textColor="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="303dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="434dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="136dp"
+        android:text="This book, commercially available (Internet search recommended) describes cultivation of bamboo shoots and poles in the warm temperate zones of the United States. The book also cover topics such as the botany of bamboo, selecting sites for plantation, sourcing plants, designing planting areas, soil and nutrition, irrigation, pests, rhizomes, and harvesting shoots and poles."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button26"
+        style="@style/ButtonColor2"
+        android:layout_width="205dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="632dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="39dp"
+        android:text="BACK"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
