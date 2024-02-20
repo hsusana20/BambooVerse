@@ -12,28 +12,27 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class BambooArchitecture extends AppCompatActivity {
+public class BuildingWithBamboo extends AppCompatActivity {
 
-
-    TextView textViewBoo, textView40, textView41, textView42, textView43;
-    ImageView imageView51, imageView55;
+    TextView textViewBook, textView44, textView45, textView46, textView47;
+    ImageView imageView56, imageView57;
     Animation scaleUp, scaleDown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bamboo_architecture);
+        setContentView(R.layout.activity_building_with_bamboo);
 
-        textViewBoo = findViewById(R.id.textViewBoo);
-        textView40 = findViewById(R.id.textView40);
-        textView42 = findViewById(R.id.textView42);
-        textView43 = findViewById(R.id.textView43);
-        textView41 = findViewById(R.id.textView41);
+        textViewBook = findViewById(R.id.textViewBook);
+        textView44 = findViewById(R.id.textView44);
+        textView45 = findViewById(R.id.textView45);
+        textView46 = findViewById(R.id.textView46);
+        textView47 = findViewById(R.id.textView47);
 
-        imageView51 = findViewById(R.id.imageView51);
-        imageView55 = findViewById(R.id.imageView55);
+        imageView56 = findViewById(R.id.imageView56);
+        imageView57 = findViewById(R.id.imageView57);
 
-        Button back = findViewById(R.id.button27);
+        Button back = findViewById(R.id.btn28);
 
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up);
         scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down);
@@ -53,7 +52,7 @@ public class BambooArchitecture extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(BambooArchitecture.this, Book.class);
+                        Intent intent = new Intent(BuildingWithBamboo.this, Book.class);
                         startActivity(intent);
                     }
 
@@ -66,5 +65,3 @@ public class BambooArchitecture extends AppCompatActivity {
         });
     }
 }
-
-

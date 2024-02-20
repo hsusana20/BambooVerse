@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -32,6 +33,9 @@ public class FarmingBamboo extends AppCompatActivity {
         imageView50 = findViewById(R.id.imageView50);
 
         Button back = findViewById(R.id.button26);
+
+        scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up);
+        scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down);
 
         back.setOnTouchListener(new View.OnTouchListener() {
             @Override

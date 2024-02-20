@@ -13,21 +13,12 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class BambooLibrary extends AppCompatActivity {
-
-    TextView textView8, textViewWeb, textViewBook, textView17, textView18, textView19;
     Animation scaleUp, scaleDown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bamboo_library);
-
-        textView8 = findViewById(R.id.textView8);
-        textViewWeb = findViewById(R.id.textViewWeb);
-        textViewBook = findViewById(R.id.textViewBook);
-        textView17 = findViewById(R.id.textView17);
-        textView18 = findViewById(R.id.textView18);
-        textView19 = findViewById(R.id.textView19);
 
         ImageView web = findViewById(R.id.Website);
         ImageView book = findViewById(R.id.Books);
@@ -83,7 +74,7 @@ public class BambooLibrary extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(BambooLibrary.this, Website.class);
+                        Intent intent = new Intent(BambooLibrary.this, Book.class);
                         startActivity(intent);
                     }
 

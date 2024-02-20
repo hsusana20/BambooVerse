@@ -112,6 +112,18 @@
             android:name=".Website"
             android:exported="false" />
         <activity
+            android:name=".BambooArchitecture"
+            android:exported="false"/>
+        <activity
+            android:name=".BuildingWithBamboo"
+            android:exported="false"/>
+        <activity
+            android:name=".Book"
+            android:exported="false"/>
+        <activity
+            android:name=".FarmingBamboo"
+            android:exported="false"/>
+        <activity
             android:name=".Scanner"
             android:exported="false"/>
         <meta-data
