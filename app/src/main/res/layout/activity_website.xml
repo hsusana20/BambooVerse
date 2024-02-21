@@ -10,12 +10,12 @@
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="399dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="5dp"
+        android:layout_width="201dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="112dp"
         android:layout_marginTop="21dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="670dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="669dp"
         android:background="@drawable/txt_bg"
         android:padding="8dp"
         android:text="Website"
@@ -224,36 +224,22 @@
     <TextView
         android:id="@+id/textView22"
         android:layout_width="135dp"
-        android:layout_height="83dp"
+        android:layout_height="54dp"
         android:layout_marginStart="237dp"
         android:layout_marginTop="277dp"
         android:layout_marginEnd="39dp"
         android:layout_marginBottom="371dp"
-        android:text="Bamboo Farming and Production in the PhilippinesBamboo Farming and Production in the Philippines"
+        android:text="Bamboo Farming and Production in the Philippines"
         android:textAlignment="center"
         android:textColor="#4CAF50"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="352dp"
-        android:layout_marginBottom="679dp"
-        android:text="Back"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
 
     <ImageView
         android:id="@+id/imageView44"
@@ -345,20 +331,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="311dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="678dp"
-        android:text="Next Page"
-        android:textColor="@color/white"
-        android:textSize="16sp"
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="666dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton31"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="321dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="666dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_forward_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

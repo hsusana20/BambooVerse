@@ -8,6 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,23 +30,24 @@ public class Website extends AppCompatActivity {
         textView20 = findViewById(R.id.textView20);
         textView21 = findViewById(R.id.textView21);
         textView22 = findViewById(R.id.textView22);
-        textViewB = findViewById(R.id.textViewB);
 
         ImageView BambooBlueAmana = findViewById(R.id.imageView34);
         ImageView BambooF = findViewById(R.id.imageView35);
         ImageView BambooT = findViewById(R.id.imageView36);
+        ImageButton leftBack = findViewById(R.id.imageButton7);
+        ImageButton rightNext = findViewById(R.id.imageButton31);
 
 
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up);
         scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down);
 
-        textViewB.setOnTouchListener(new View.OnTouchListener() {
+        rightNext.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    textViewB.startAnimation(scaleUp);
+                    rightNext.startAnimation(scaleUp);
                 } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    textViewB.startAnimation(scaleDown);
+                    rightNext.startAnimation(scaleDown);
                 }
                 scaleDown.setAnimationListener(new Animation.AnimationListener() {
                     @Override
@@ -54,7 +56,7 @@ public class Website extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(Website.this, BambooLibrary.class);
+                        Intent intent = new Intent(Website.this, WebsiteSlot.class);
                         startActivity(intent);
                     }
 
@@ -139,6 +141,33 @@ public class Website extends AppCompatActivity {
                     @Override
                     public void onAnimationEnd(Animation animation) {
                         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://bicol.da.gov.ph/wp%2Dcontent/uploads/2021/09/Bamboo%2Dtechnoguide%2D2021.pdf"));
+                        startActivity(intent);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                    }
+                });
+                return true;
+            }
+        });
+
+        leftBack.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    leftBack.startAnimation(scaleUp);
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    leftBack.startAnimation(scaleDown);
+                }
+                scaleDown.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        Intent intent = new Intent(Website.this, BambooLibrary.class);
                         startActivity(intent);
                     }
 

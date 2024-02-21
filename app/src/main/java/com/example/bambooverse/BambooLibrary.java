@@ -20,12 +20,6 @@ import java.util.ArrayList;
 
 public class BambooLibrary extends AppCompatActivity {
 
-    ArrayList<String> list;
-    ArrayAdapter<String> adapter;
-    Sting[] libraryCatalogue = {"Bamboo blueamana", "Bamboo Farming and Production in Philippines Bamboo", "Bamboo Technoguide",
-                                "Bamboo Unveiled", "Training Manual of Bamboo Charcoal", "Building Bamboo Bridge", "Farming Bamboo",
-                                "Bamboo Architecture and Design", "Building with Bamboo: A Handbook 2nd Edition"};
-
 
     Animation scaleUp, scaleDown;
 
@@ -34,7 +28,6 @@ public class BambooLibrary extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bamboo_library);
 
-        searchView = findViewById(R)
 
         ImageView web = findViewById(R.id.Website);
         ImageView book = findViewById(R.id.Books);

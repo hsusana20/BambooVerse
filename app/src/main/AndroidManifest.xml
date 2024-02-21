@@ -111,6 +111,10 @@
         <activity
             android:name=".Website"
             android:exported="false" />
+
+        <activity
+            android:name=".WebsiteSlot"
+            android:exported="false" />
         <activity
             android:name=".BambooArchitecture"
             android:exported="false"/>
