@@ -6,19 +6,35 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import android.widget.SearchView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
+import java.util.ArrayList;
+
 public class BambooLibrary extends AppCompatActivity {
+
+    ArrayList<String> list;
+    ArrayAdapter<String> adapter;
+    Sting[] libraryCatalogue = {"Bamboo blueamana", "Bamboo Farming and Production in Philippines Bamboo", "Bamboo Technoguide",
+                                "Bamboo Unveiled", "Training Manual of Bamboo Charcoal", "Building Bamboo Bridge", "Farming Bamboo",
+                                "Bamboo Architecture and Design", "Building with Bamboo: A Handbook 2nd Edition"};
+
+
     Animation scaleUp, scaleDown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bamboo_library);
+
+        searchView = findViewById(R)
 
         ImageView web = findViewById(R.id.Website);
         ImageView book = findViewById(R.id.Books);
