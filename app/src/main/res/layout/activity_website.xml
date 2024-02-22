@@ -225,10 +225,10 @@
         android:id="@+id/textView22"
         android:layout_width="135dp"
         android:layout_height="54dp"
-        android:layout_marginStart="237dp"
-        android:layout_marginTop="277dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="371dp"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="379dp"
         android:text="Bamboo Farming and Production in the Philippines"
         android:textAlignment="center"
         android:textColor="#4CAF50"
@@ -236,10 +236,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView44"

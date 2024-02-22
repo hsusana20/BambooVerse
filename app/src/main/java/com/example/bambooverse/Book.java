@@ -7,6 +7,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,8 +30,8 @@ public class Book extends AppCompatActivity {
         ImageView BambooAr = findViewById(R.id.BambooArc);
         ImageView BWB = findViewById(R.id.BuildingWithBamboo);
 
-        TextView Back = findViewById(R.id.textView34);
-        TextView NextPage = findViewById(R.id.textView35);
+        ImageButton Back = findViewById(R.id.imageButton33);
+        ImageButton NextPage = findViewById(R.id.imageButton34);
 
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up);
         scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down);
@@ -213,6 +214,33 @@ public class Book extends AppCompatActivity {
                     @Override
                     public void onAnimationEnd(Animation animation) {
                         Intent intent = new Intent(Book.this, BambooLibrary.class);
+                        startActivity(intent);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                    }
+                });
+                return true;
+            }
+        });
+
+        NextPage.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    NextPage.startAnimation(scaleUp);
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    NextPage.startAnimation(scaleDown);
+                }
+                scaleDown.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        Intent intent = new Intent(Book.this, BookSlot.class);
                         startActivity(intent);
                     }
 
