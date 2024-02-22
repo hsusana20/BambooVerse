@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context=".AddCatalogue">
+
+    <ImageView
+        android:id="@+id/imageView82"
+        android:layout_width="368dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="489dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bambooverse_logo" />
+
+    <ImageView
+        android:id="@+id/imageView84"
+        android:layout_width="321dp"
+        android:layout_height="484dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="231dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView83"
+        android:layout_width="209dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="463dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/txt_bg" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="223dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="481dp"
+        android:text="Add Catalogue!"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="275dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="392dp"
+        android:text="If you want to add to the library, you can send us a pdf file, link to the article, or a message so we can verify before adding it to our Bamboo Catalogue!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFname"
+        android:layout_width="282dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="346dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="335dp"
+        android:background="@drawable/txt_bg3"
+        android:drawablePadding="8dp"
+        android:hint="Full Name"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="282dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="403dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="277dp"
+        android:background="@drawable/txt_bg3"
+        android:drawablePadding="8dp"
+        android:hint="Email Address"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMess"
+        android:layout_width="283dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/txt_bg3"
+        android:drawablePadding="8dp"
+        android:hint="Message/Link"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button28"
+        style="@style/ButtonColor1"
+        android:layout_width="266dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="529dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="149dp"
+        android:text="Upload File"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button29"
+        style="@style/ButtonColor1"
+        android:layout_width="264dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="591dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="87dp"
+        android:text="SEND MESSAGE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button30"
+        style="@style/ButtonColor1"
+        android:layout_width="264dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="654dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="24dp"
+        android:text="BACK"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

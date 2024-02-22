@@ -164,7 +164,7 @@ public class BambooLibrary extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(BambooLibrary.this, Website.class);
+                        Intent intent = new Intent(BambooLibrary.this, AskDirectly.class);
                         startActivity(intent);
                     }
 
@@ -175,6 +175,61 @@ public class BambooLibrary extends AppCompatActivity {
                 return true;
             }
         });
+
+        add.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    add.startAnimation(scaleUp);
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    add.startAnimation(scaleDown);
+                }
+                scaleDown.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        Intent intent = new Intent(BambooLibrary.this, AddCatalogue.class);
+                        startActivity(intent);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                    }
+                });
+                return true;
+            }
+        });
+
+        back.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    back.startAnimation(scaleUp);
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    back.startAnimation(scaleDown);
+                }
+                scaleDown.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        Intent intent = new Intent(BambooLibrary.this, UpdatedLandingPage.class);
+                        startActivity(intent);
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                    }
+                });
+                return true;
+            }
+        });
+
     }
 
 

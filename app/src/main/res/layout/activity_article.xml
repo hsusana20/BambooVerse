@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScreenBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Article">
+
+
+    <TextView
+        android:id="@+id/textViewAr"
+        android:layout_width="163dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="637dp"
+        android:background="@drawable/txt_bg"
+        android:padding="8dp"
+        android:text="Article"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton36"
+        android:layout_width="50dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginBottom="637dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton37"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="635dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="333dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="565dp"
+        android:background="@drawable/txt_bg3"
+        android:iconifiedByDefault="false"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Type Here to Search" />
+
+    <ImageView
+        android:id="@+id/DA"
+        android:layout_width="157dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="211dp"
+        android:layout_marginBottom="386dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/GBT"
+        android:layout_width="159dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="388dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView90"
+        android:layout_width="157dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginBottom="208dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView91"
+        android:layout_width="157dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="211dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="208dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView92"
+        android:layout_width="157dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="536dp"
+        android:layout_marginEnd="211dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView93"
+        android:layout_width="157dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="536dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView94"
+        android:layout_width="112dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="193dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginBottom="449dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a1" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="119dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="293dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginBottom="403dp"
+        android:text="DA: Use Bamboo vs. Flooding"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView95"
+        android:layout_width="128dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="453dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/a2" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="144dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="282dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="403dp"
+        android:text="Greener Bamboo Textiles developed in PH"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView96"
+        android:layout_width="106dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/a3"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:text="World’s First Bamboo crash barrier installed on highway"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="449dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

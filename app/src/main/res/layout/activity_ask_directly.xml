@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbg"
+    tools:context=".AskDirectly">
+
+    <ImageView
+        android:id="@+id/imageView85"
+        android:layout_width="409dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="459dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bambooverse_logo" />
+
+    <ImageView
+        android:id="@+id/imageView86"
+        android:layout_width="305dp"
+        android:layout_height="437dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView87"
+        android:layout_width="194dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="419dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/txt_bg" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="263dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="441dp"
+        android:text="Ask us directly!"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="283dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="358dp"
+        android:text="Want to learn information directly from our organization? Ask us directly and we will make sure all your inquiries are answered!"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFN"
+        android:layout_width="282dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="383dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="297dp"
+        android:background="@drawable/txt_bg3"
+        android:drawablePadding="8dp"
+        android:hint="Full Name"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextEA"
+        android:layout_width="282dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="442dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="238dp"
+        android:background="@drawable/txt_bg3"
+        android:drawablePadding="8dp"
+        android:hint="Email Address"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextYM"
+        android:layout_width="285dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="502dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="159dp"
+        android:background="@drawable/txt_bg3"
+        android:drawablePadding="8dp"
+        android:hint="Your Message"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button31"
+        style="@style/ButtonColor1"
+        android:layout_width="232dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="98dp"
+        android:text="SEND MESSAGE"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button32"
+        style="@style/ButtonColor1"
+        android:layout_width="232dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="38dp"
+        android:text="BACK"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

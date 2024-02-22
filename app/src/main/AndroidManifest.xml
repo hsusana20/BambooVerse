@@ -8,6 +8,7 @@
 
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET" />
 
 
@@ -125,7 +126,16 @@
             android:name=".Book"
             android:exported="false"/>
         <activity
+            android:name=".BookSlot"
+            android:exported="false"/>
+        <activity
             android:name=".FarmingBamboo"
+            android:exported="false"/>
+        <activity
+            android:name=".AskDirectly"
+            android:exported="false"/>
+        <activity
+            android:name=".AddCatalogue"
             android:exported="false"/>
         <activity
             android:name=".Scanner"
