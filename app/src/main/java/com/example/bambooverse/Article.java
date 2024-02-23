@@ -20,8 +20,8 @@ public class Article extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article);
 
-        ImageButton back = findViewById(R.id.imageButton36);
-        ImageButton Next = findViewById(R.id.imageButton37);
+        ImageButton back = findViewById(R.id.imageButtonArrow);
+        ImageButton Next = findViewById(R.id.imageButtonArrow1);
 
         ImageView useBamboo = findViewById(R.id.DA);
         ImageView greenerBamboo = findViewById(R.id.GBT);
