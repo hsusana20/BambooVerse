@@ -135,6 +135,18 @@
             android:name=".AskDirectly"
             android:exported="false"/>
         <activity
+            android:name=".Article"
+            android:exported="false"/>
+        <activity
+            android:name=".Videos"
+            android:exported="false"/>
+        <activity
+            android:name=".VideosSlot"
+            android:exported="false"/>
+        <activity
+            android:name=".ArticleSlot"
+            android:exported="false"/>
+        <activity
             android:name=".AddCatalogue"
             android:exported="false"/>
         <activity

@@ -1,53 +1,45 @@
 package com.example.bambooverse;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
-
-import android.widget.SearchView;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
-import java.util.ArrayList;
-
-public class BambooLibrary extends AppCompatActivity {
-
+public class Videos extends AppCompatActivity {
 
     Animation scaleUp, scaleDown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bamboo_library);
+        setContentView(R.layout.activity_videos);
 
+        ImageButton backLeft = findViewById(R.id.imageButton39);
+        ImageButton pageNext = findViewById(R.id.imageButton40);
 
-        ImageView web = findViewById(R.id.Website);
-        ImageView book = findViewById(R.id.Books);
-        ImageView art = findViewById(R.id.Articles);
-        ImageView vid = findViewById(R.id.Videos);
-        ImageView ask = findViewById(R.id.Ask);
+        ImageView filmBamboo = findViewById(R.id.imageView97);
+        ImageView bambooFilm = findViewById(R.id.imageView109);
+        ImageView Bamboofilm = findViewById(R.id.imageView110);
 
-        Button add = findViewById(R.id.buttonAdd);
-        Button back = findViewById(R.id.buttonBack);
 
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up);
         scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down);
 
-        web.setOnTouchListener(new View.OnTouchListener() {
+
+        backLeft.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    web.startAnimation(scaleUp);
+                    backLeft.startAnimation(scaleUp);
                 } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    web.startAnimation(scaleDown);
+                    backLeft.startAnimation(scaleDown);
                 }
                 scaleDown.setAnimationListener(new Animation.AnimationListener() {
                     @Override
@@ -56,7 +48,7 @@ public class BambooLibrary extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(BambooLibrary.this, Website.class);
+                        Intent intent = new Intent(Videos.this, BambooLibrary.class);
                         startActivity(intent);
                     }
 
@@ -68,13 +60,13 @@ public class BambooLibrary extends AppCompatActivity {
             }
         });
 
-        book.setOnTouchListener(new View.OnTouchListener() {
+        pageNext.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    book.startAnimation(scaleUp);
+                    pageNext.startAnimation(scaleUp);
                 } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    book.startAnimation(scaleDown);
+                    pageNext.startAnimation(scaleDown);
                 }
                 scaleDown.setAnimationListener(new Animation.AnimationListener() {
                     @Override
@@ -83,7 +75,7 @@ public class BambooLibrary extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(BambooLibrary.this, Book.class);
+                        Intent intent = new Intent(Videos.this, VideosSlot.class);
                         startActivity(intent);
                     }
 
@@ -95,13 +87,13 @@ public class BambooLibrary extends AppCompatActivity {
             }
         });
 
-        art.setOnTouchListener(new View.OnTouchListener() {
+        filmBamboo.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    art.startAnimation(scaleUp);
+                    filmBamboo.startAnimation(scaleUp);
                 } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    art.startAnimation(scaleDown);
+                    filmBamboo.startAnimation(scaleDown);
                 }
                 scaleDown.setAnimationListener(new Animation.AnimationListener() {
                     @Override
@@ -110,7 +102,7 @@ public class BambooLibrary extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(BambooLibrary.this, Article.class);
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/tKcyrlysQwA"));
                         startActivity(intent);
                     }
 
@@ -122,13 +114,13 @@ public class BambooLibrary extends AppCompatActivity {
             }
         });
 
-        vid.setOnTouchListener(new View.OnTouchListener() {
+        bambooFilm.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    vid.startAnimation(scaleUp);
+                    bambooFilm.startAnimation(scaleUp);
                 } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    vid.startAnimation(scaleDown);
+                    bambooFilm.startAnimation(scaleDown);
                 }
                 scaleDown.setAnimationListener(new Animation.AnimationListener() {
                     @Override
@@ -137,7 +129,7 @@ public class BambooLibrary extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(BambooLibrary.this, Videos.class);
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/tKcyrlysQwA"));
                         startActivity(intent);
                     }
 
@@ -149,13 +141,13 @@ public class BambooLibrary extends AppCompatActivity {
             }
         });
 
-        ask.setOnTouchListener(new View.OnTouchListener() {
+        Bamboofilm.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent motionEvent) {
                 if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    ask.startAnimation(scaleUp);
+                    Bamboofilm.startAnimation(scaleUp);
                 } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    ask.startAnimation(scaleDown);
+                    Bamboofilm.startAnimation(scaleDown);
                 }
                 scaleDown.setAnimationListener(new Animation.AnimationListener() {
                     @Override
@@ -164,61 +156,7 @@ public class BambooLibrary extends AppCompatActivity {
 
                     @Override
                     public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(BambooLibrary.this, AskDirectly.class);
-                        startActivity(intent);
-                    }
-
-                    @Override
-                    public void onAnimationRepeat(Animation animation) {
-                    }
-                });
-                return true;
-            }
-        });
-
-        add.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent motionEvent) {
-                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    add.startAnimation(scaleUp);
-                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    add.startAnimation(scaleDown);
-                }
-                scaleDown.setAnimationListener(new Animation.AnimationListener() {
-                    @Override
-                    public void onAnimationStart(Animation animation) {
-                    }
-
-                    @Override
-                    public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(BambooLibrary.this, AddCatalogue.class);
-                        startActivity(intent);
-                    }
-
-                    @Override
-                    public void onAnimationRepeat(Animation animation) {
-                    }
-                });
-                return true;
-            }
-        });
-
-        back.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent motionEvent) {
-                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
-                    back.startAnimation(scaleUp);
-                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-                    back.startAnimation(scaleDown);
-                }
-                scaleDown.setAnimationListener(new Animation.AnimationListener() {
-                    @Override
-                    public void onAnimationStart(Animation animation) {
-                    }
-
-                    @Override
-                    public void onAnimationEnd(Animation animation) {
-                        Intent intent = new Intent(BambooLibrary.this, UpdatedLandingPage.class);
+                        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/tKcyrlysQwA"));
                         startActivity(intent);
                     }
 
@@ -231,6 +169,4 @@ public class BambooLibrary extends AppCompatActivity {
         });
 
     }
-
-
 }
