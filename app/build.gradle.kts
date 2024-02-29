@@ -8,6 +8,7 @@ android {
     namespace = "com.example.bambooverse"
     compileSdk = 34
 
+
     defaultConfig {
         applicationId = "com.example.bambooverse"
         minSdk = 29

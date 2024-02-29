@@ -147,6 +147,9 @@
             android:name=".ArticleSlot"
             android:exported="false"/>
         <activity
+            android:name=".WebsiteSearch"
+            android:exported="false"/>
+        <activity
             android:name=".AddCatalogue"
             android:exported="false"/>
         <activity
