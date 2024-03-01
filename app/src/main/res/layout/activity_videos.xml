@@ -12,10 +12,6 @@
         android:id="@+id/textView57"
         android:layout_width="152dp"
         android:layout_height="47dp"
-        android:layout_marginStart="129dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="130dp"
-        android:layout_marginBottom="634dp"
         android:background="@drawable/txt_bg"
         android:padding="8dp"
         android:text="Videos"
@@ -25,37 +21,33 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintVertical_bias="0.071" />
 
     <ImageButton
         android:id="@+id/imageButton39"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="288dp"
-        android:layout_marginBottom="630dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147"
         app:srcCompat="@drawable/baseline_arrow_back_24" />
 
     <ImageButton
         android:id="@+id/imageButton40"
         android:layout_width="58dp"
         android:layout_height="58dp"
-        android:layout_marginStart="291dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="62dp"
-        android:layout_marginBottom="630dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147"
         app:srcCompat="@drawable/baseline_arrow_forward_24" />
 
     <ImageView
@@ -147,8 +139,8 @@
 
     <TextView
         android:id="@+id/textView59"
-        android:layout_width="166dp"
-        android:layout_height="40dp"
+        android:layout_width="155dp"
+        android:layout_height="36dp"
         android:text="Film Bamboo - The Tradition of the Future"
         android:textAlignment="center"
         android:textColor="#4CAF50"

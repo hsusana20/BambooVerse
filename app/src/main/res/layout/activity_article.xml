@@ -21,11 +21,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.062"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="125dp" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <ImageView
         android:id="@+id/DA"
@@ -166,8 +165,8 @@
 
     <TextView
         android:id="@+id/textView54"
-        android:layout_width="194dp"
-        android:layout_height="39dp"
+        android:layout_width="185dp"
+        android:layout_height="35dp"
         android:text="World’s First Bamboo crash barrier installed on highway"
         android:textAlignment="center"
         android:textColor="#4CAF50"
@@ -264,32 +263,24 @@
         android:id="@+id/imageButtonArrow"
         android:layout_width="53dp"
         android:layout_height="41dp"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="287dp"
-        android:layout_marginBottom="645dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387"
+        app:layout_constraintVertical_bias="0.136"
         app:srcCompat="@drawable/baseline_arrow_back_24" />
 
     <ImageButton
         android:id="@+id/imageButtonArrow1"
         android:layout_width="54dp"
         android:layout_height="40dp"
-        android:layout_marginStart="288dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginEnd="65dp"
-        android:layout_marginBottom="644dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.387"
+        app:layout_constraintVertical_bias="0.136"
         app:srcCompat="@drawable/baseline_arrow_forward_24" />
 
     <ImageView
