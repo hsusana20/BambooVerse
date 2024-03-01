@@ -18,7 +18,7 @@ public class ArticleSlot extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_slot);
 
-        ImageButton backLeft = findViewById(R.id.imageButton38);
+        ImageButton backLeft = findViewById(R.id.imageButton35);
 
 
         scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up);
