@@ -13,12 +13,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 public class AddCatalogue extends AppCompatActivity {
 
     Animation scaleUp, scaleDown;
+
+    private static final int FILE_CREATE_REQUEST_CODE = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,7 +60,8 @@ public class AddCatalogue extends AppCompatActivity {
                     public void onAnimationEnd(Animation animation) {
                         Intent intent = new Intent(Intent.ACTION_CREATE_DOCUMENT, MediaStore.Downloads.EXTERNAL_CONTENT_URI);
                         intent.setType("*/*");
-                        startActivity(intent);
+                        startActivityForResult(intent, FILE_CREATE_REQUEST_CODE);
+
                     }
 
                     @Override
@@ -125,5 +129,12 @@ public class AddCatalogue extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == FILE_CREATE_REQUEST_CODE && resultCode == RESULT_OK) {
+            Toast.makeText(AddCatalogue.this, "File saved successfully", Toast.LENGTH_SHORT).show();
+        }
     }
 }
