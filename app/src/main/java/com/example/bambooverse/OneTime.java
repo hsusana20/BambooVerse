@@ -4,13 +4,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
 public class OneTime extends AppCompatActivity {
     TextView txtView, txtView3, txtView4, txtView5, txtView6, txtView7, txtView8, etNumber;
     Button btnPM, btnDN, button3;
+
+    Animation scaleUp, scaleDown;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,26 +32,66 @@ public class OneTime extends AppCompatActivity {
         btnDN = findViewById(R.id.btnDN);
         button3 = findViewById(R.id.button3);
 
-        btnDN.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(OneTime.this, PaymentMethod.class);
-                startActivity(intent);
+        scaleUp = AnimationUtils.loadAnimation(this, R.anim.scale_up);
+        scaleDown = AnimationUtils.loadAnimation(this, R.anim.scale_down);
 
+        btnDN.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    btnDN.startAnimation(scaleUp);
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    btnDN.startAnimation(scaleDown);
+                }
+                scaleDown.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        Intent intent = new Intent(OneTime.this, PaymentMethod.class);
+                        startActivity(intent);
+                    }
+
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                    }
+                });
+                return true;
             }
         });
 
-        button3.setOnClickListener(new View.OnClickListener() {
+        button3.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View view) {
-                openCouponFragments();
+            public boolean onTouch(View v, MotionEvent motionEvent) {
+                if (motionEvent.getAction() == MotionEvent.ACTION_DOWN) {
+                    button3.startAnimation(scaleUp);
+                } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+                    button3.startAnimation(scaleDown);
+                }
+                scaleDown.setAnimationListener(new Animation.AnimationListener() {
+                    @Override
+                    public void onAnimationStart(Animation animation) {
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animation animation) {
+                        Intent intent = new Intent(OneTime.this, UpdatedLandingPage.class);
+                        startActivity(intent);
+                    }
+
+
+                    @Override
+                    public void onAnimationRepeat(Animation animation) {
+                    }
+                });
+                return true;
             }
         });
-    }
-
-
-    public void openCouponFragments() {
-        Intent intent = new Intent(this, Coupons.class);
-        startActivity(intent);
     }
 }
+
+
+
